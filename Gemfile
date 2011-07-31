@@ -28,6 +28,7 @@ gem 'sqlite3'
 # and rake tasks are available in development mode:
 
  gem "crudify"
+ gem "haml"
 
  group :development, :test do
 #   gem 'webrat'
