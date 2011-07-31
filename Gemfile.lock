@@ -45,6 +45,11 @@ GEM
       factory_girl (~> 2.0.0)
       railties (>= 3.0.0)
     haml (3.1.2)
+    haml-rails (0.3.4)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      haml (~> 3.0)
+      railties (~> 3.0)
     i18n (0.5.0)
     mail (2.2.19)
       activesupport (>= 2.3.6)
@@ -108,7 +113,7 @@ DEPENDENCIES
   crudify
   factory_girl
   factory_girl_rails
-  haml
+  haml-rails
   rails (= 3.0.9)
   rspec-rails
   sqlite3
