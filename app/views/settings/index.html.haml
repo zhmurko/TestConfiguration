@@ -2,15 +2,15 @@
 
 %table
   %tr
-    %th
-    %th
-    %th
+    %th Parameter 
+    %th Type
+    %th Value
 
   - @settings.each do |setting|
     %tr
-      %td= link_to 'Show', setting
-      %td= link_to 'Edit', edit_setting_path(setting)
-      %td= link_to 'Destroy', setting, :confirm => 'Are you sure?', :method => :delete
+      %td= link_to(setting.caption, setting)+":"
+      %td= setting.converted_value.class
+      %td= setting.value
 
 %br
 

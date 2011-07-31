@@ -7,4 +7,21 @@
           %li= msg
 
   .actions
-    = f.submit 'Save'
+  %table
+    %tr
+      %td
+        %label{:for => "caption"} Caption
+      %td
+        = f.text_field :caption
+    %tr
+      %td
+        %label{:for => "value"} Value
+      %td
+        = f.text_area :value, :rows => 4, :cols => 20
+      %td.hint 
+        Supported formats are String, Integer, Date and DateTime: 
+        "sample", 
+        42, 
+        14-04-1982, 
+        01/01/2011 19:30
+  = f.submit 'Save'
