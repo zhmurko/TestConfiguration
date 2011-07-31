@@ -29,5 +29,7 @@ gem 'sqlite3'
  group :development, :test do
 #   gem 'webrat'
     gem 'rspec-rails'
+    gem 'factory_girl'
+    gem 'factory_girl_rails'
     gem "autotest"
  end
